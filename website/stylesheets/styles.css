@@ -1,1 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 
+body {
+  font-family: sans-serif;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  gap: 5px;
+  background: #233e58;
+  color: white;
+  gap: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .skills {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0px;
+  }
+}
+
+h2 {
+  color: white;
+}
+
+.text--bold {
+  font-weight: 600;
+}
+
+.skills__content__wrapper {
+  height: 150px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+@media only screen and (max-width: 768px) {
+  .skills__content__wrapper {
+    border-top: none;
+    padding: 20px;
+  }
+}
+
+.skills__content__wrapper > p,
+.skills__content__wrapper > h2 {
+  padding: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .skills__content__wrapper > p,
+  .skills__content__wrapper > h2 {
+    text-align: center;
+  }
+}
+
+.skills__content__wrapper > h1 {
+  margin-left: 10px;
+}
+
+.skills__content__wrapper > p {
+  margin-left: 13px;
+}
+
+.phone__app__wrapper {
+  min-width: 200px;
+  max-width: 250px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .phone__app__wrapper {
+    max-height: 200px;
+  }
+}
+
+.phone__app {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.phone__app > img {
+  height: 40px;
+  width: 40px;
+}
+
+#phone__app__1 {
+  background-color: #822e81;
+}
+
+#phone__app__2 {
+  background-color: #3c6997;
+}
+
+#phone__app__3 {
+  background-color: #822e81;
+}
+
+#phone__app__4 {
+  background-color: #3c6997;
+}
+
+#phone__app__5 {
+  background-color: #822e81;
+}
+
+#phone__app__6 {
+  background-color: #3c6997;
+}
+
+#phone__app__7 {
+  background-color: #822e81;
+}
+
+#phone__app__8 {
+  background-color: #3c6997;
+}
+
+#phone__app__9 {
+  background-color: #3c6997;
+}
+
+#phone__app__10 {
+  background-color: #3c6997;
+}
+
+#phone__app__11 {
+  background-color: #3c6997;
+}
+
+#phone__app__12 {
+  background-color: #3c6997;
+}
+
+#phone__app__13 {
+  background-color: #3c6997;
+}
+
+#phone__app__14 {
+  background-color: #3c6997;
+}
+
+#phone__app__15 {
+  background-color: #3c6997;
+}
