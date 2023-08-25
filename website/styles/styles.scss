@@ -1,5 +1,3 @@
-// Added to apps: React, javascript, java, html5, css3, SCSS/Sass
-// Want to add: git,
 * {
 	padding: 0;
 	margin: 0;
@@ -45,10 +43,6 @@ h2 {
 		border-top: none;
 		padding: 20px;
 	}
-	// @media only screen and (max-width: 768px) {
-	// 	border-top: none;
-	// 	border-bottom: none;
-	// }
 }
 
 .skills__content__wrapper > p,
@@ -57,27 +51,14 @@ h2 {
 	@media only screen and (max-width: 768px) {
 		text-align: center;
 	}
-	// @media only screen and (max-width: 576px) {
-	// 	margin-right: 5px;
-	// }
 }
 
 .skills__content__wrapper > h1 {
 	margin-left: 10px;
-	// @media only screen and (max-width: 576px) {
-	// 	font-size: medium;
-	// 	margin-left: 10px;
-	// 	padding: 0;
-	// }
 }
 
 .skills__content__wrapper > p {
 	margin-left: 13px;
-	// @media only screen and (max-width: 576px) {
-	// 	font-size: small;
-	// 	margin-left: 10px;
-	// 	padding: 0;
-	// }
 }
 
 .phone__app__wrapper {
