@@ -1,0 +1,103 @@
+// Added to apps: React, javascript, java, html5
+// Want to add:
+
+.phone__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
+}
+
+.phone {
+	width: 195.55px;
+	height: 414px;
+}
+
+.phone__screen {
+	border: 4px solid #111;
+	border-radius: 20px;
+	background-color: black;
+	width: 195.5px;
+	height: 414px;
+}
+
+.phone__app__wrapper {
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: flex-start;
+	gap: 10px;
+}
+
+.phone__app {
+	background-color: white;
+	height: 50px;
+	width: 50px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.phone__app > img {
+	height: 40px;
+	width: 40px;
+}
+
+#phone__app__1 {
+	background-color: rgb(242, 187, 23);
+}
+
+#phone__app__2 {
+	background-color: white;
+}
+
+#phone__app__3 {
+	background-color: rgb(242, 187, 23);
+}
+
+#phone__app__4 {
+	background-color: white;
+}
+#phone__app__5 {
+	background-color: rgb(242, 187, 23);
+}
+
+#phone__app__6 {
+	background-color: white;
+}
+
+#phone__app__7 {
+	background-color: rgb(242, 187, 23);
+}
+
+#phone__app__8 {
+	background-color: white;
+}
+
+#phone__app__9 {
+	background-color: rgb(242, 187, 23);
+}
+
+#phone__app__10 {
+	background-color: white;
+}
+
+#phone__app__11 {
+	background-color: rgb(242, 187, 23);
+}
+#phone__app__12 {
+	background-color: white;
+}
+#phone__app__13 {
+	background-color: rgb(242, 187, 23);
+}
+
+#phone__app__14 {
+	background-color: white;
+}
+
+#phone__app__15 {
+	background-color: rgb(242, 187, 23);
+}
