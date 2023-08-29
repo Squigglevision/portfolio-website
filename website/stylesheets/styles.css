@@ -1,32 +1,141 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html {
+  width: 100%;
 }
 
 body {
-  font-family: sans-serif;
+  display: flex;
+  width: 100%;
+  background-image: url(../images/portfolio-background.jpg);
+}
+
+nav {
+  width: 220px;
+  height: 290px;
+  padding-top: 70px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  margin-bottom: auto;
+}
+
+nav > ul {
+  padding: 20px;
+  list-style-type: none;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 15px;
+  margin-right: 10px;
+  font-size: large;
+}
+
+.name {
+  color: white;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+
+nav > ul > li > a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.content__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 40px;
+}
+
+.landing {
+  height: 340px;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: left;
+  color: white;
+  height: 250px;
+  width: 100%;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.header__text__wrapper {
+  width: 100%;
+}
+
+.header__title {
+  font-size: 68px;
+  font-weight: 300;
+  margin-top: 50px;
+  color: white;
+}
+
+.header__subtitle {
+  font-size: 38px;
+  font-weight: 199;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+header p {
+  max-width: 500px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.tagline {
+  margin-bottom: 20px;
+  max-width: 450px;
+  line-height: 30px;
+  font-size: large;
+}
+
+.phone__app__wrapper__2 {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
 }
 
 .skills {
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   height: 400px;
+  width: 100%;
   gap: 5px;
-  background: #233e58;
   color: white;
   gap: 30px;
-}
-@media only screen and (max-width: 768px) {
-  .skills {
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 0px;
-  }
-}
-
-h2 {
-  color: white;
+  border-left: 5px solid white;
 }
 
 .text--bold {
@@ -36,68 +145,37 @@ h2 {
 .skills__content__wrapper {
   height: 150px;
   max-width: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-}
-@media only screen and (max-width: 768px) {
-  .skills__content__wrapper {
-    border-top: none;
-    padding: 20px;
-    max-width: 250px;
-  }
+  align-self: flex-start;
+  margin-left: 40px;
 }
 
 .skills__content__wrapper > p,
 .skills__content__wrapper > h2 {
   padding: 5px;
 }
-@media only screen and (max-width: 768px) {
-  .skills__content__wrapper > p,
-  .skills__content__wrapper > h2 {
-    text-align: center;
-  }
-}
-
-.skills__content__wrapper > h1 {
-  margin-left: 0;
-}
-
-.skills__content__wrapper > p {
-  margin-left: 0;
-}
 
 .phone__app__wrapper {
-  min-width: 200px;
-  max-width: 250px;
   height: 300px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   gap: 10px;
-}
-@media only screen and (max-width: 768px) {
-  .phone__app__wrapper {
-    max-height: 200px;
-  }
+  margin-left: 50px;
 }
 
 .phone__app {
-  height: 50px;
-  width: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid white;
+  border: 0.5px solid white;
 }
 
 .phone__app > img {
-  height: 40px;
-  width: 40px;
+  height: 20px;
+  width: 20px;
 }
 
 #phone__app__1 {
@@ -158,4 +236,8 @@ h2 {
 
 #phone__app__15 {
   background-color: #3c6997;
+}
+
+.projects {
+  height: 2000px;
 }
