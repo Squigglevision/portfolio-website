@@ -11,7 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 500px;
+  height: 400px;
   gap: 5px;
   background: #233e58;
   color: white;
@@ -35,7 +35,7 @@ h2 {
 
 .skills__content__wrapper {
   height: 150px;
-  max-width: 300px;
+  max-width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,6 +46,7 @@ h2 {
   .skills__content__wrapper {
     border-top: none;
     padding: 20px;
+    max-width: 250px;
   }
 }
 
@@ -61,17 +62,17 @@ h2 {
 }
 
 .skills__content__wrapper > h1 {
-  margin-left: 10px;
+  margin-left: 0;
 }
 
 .skills__content__wrapper > p {
-  margin-left: 13px;
+  margin-left: 0;
 }
 
 .phone__app__wrapper {
   min-width: 200px;
   max-width: 250px;
-  height: 400px;
+  height: 300px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
