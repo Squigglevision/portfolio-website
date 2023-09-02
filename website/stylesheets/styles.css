@@ -11,13 +11,17 @@ html {
 body {
   display: flex;
   width: 100%;
-  background-image: url(../images/portfolio-background.jpg);
+  background-image: url(../images/gradient-background.png);
+  background-size: 1920px 367.5px;
+  background-repeat: repeat-y;
+  background-color: #0f0f0f;
 }
 
 nav {
   width: 220px;
   height: 290px;
   padding-top: 70px;
+  margin-left: 20px;
 }
 
 .sticky {
@@ -36,10 +40,10 @@ nav > ul {
   align-items: flex-end;
   gap: 15px;
   margin-right: 10px;
-  font-size: large;
+  font-size: 20px;
 }
 
-.name {
+.nav__name {
   color: white;
   margin-bottom: 10px;
   font-weight: bold;
@@ -56,15 +60,30 @@ nav > ul > li > a:hover {
   text-decoration: underline;
 }
 
+.nav__images {
+  display: flex;
+  margin-right: 44px;
+  margin-top: 20px;
+  width: 30px;
+  height: 30px;
+  gap: 10px;
+}
+
+.nav__images > img {
+  width: 100%;
+  height: 100%;
+}
+
 .content__wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
   gap: 40px;
+  margin-left: 85px;
 }
 
-.landing {
+.about {
   height: 340px;
   width: 100%;
   color: white;
@@ -91,153 +110,24 @@ header {
 }
 
 .header__title {
-  font-size: 68px;
-  font-weight: 300;
+  font-size: 40px;
+  font-weight: 400;
   margin-top: 50px;
   color: white;
 }
 
 .header__subtitle {
-  font-size: 38px;
+  font-size: 29px;
   font-weight: 199;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 30px;
   font-weight: lighter;
 }
 
-header p {
-  max-width: 500px;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.tagline {
-  margin-bottom: 20px;
-  max-width: 450px;
-  line-height: 30px;
-  font-size: large;
-}
-
-.phone__app__wrapper__2 {
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  gap: 10px;
-}
-
-.skills {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 400px;
-  width: 100%;
-  gap: 5px;
-  color: white;
-  gap: 30px;
-  border-left: 5px solid white;
-}
-
-.text--bold {
-  font-weight: 600;
-}
-
-.skills__content__wrapper {
-  height: 150px;
-  max-width: 450px;
-  align-self: flex-start;
-  margin-left: 40px;
-}
-
-.skills__content__wrapper > p,
-.skills__content__wrapper > h2 {
-  padding: 5px;
-}
-
-.phone__app__wrapper {
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  gap: 10px;
-  margin-left: 50px;
-}
-
-.phone__app {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0.5px solid white;
-}
-
-.phone__app > img {
-  height: 20px;
-  width: 20px;
-}
-
-#phone__app__1 {
-  background-color: #822e81;
-}
-
-#phone__app__2 {
-  background-color: #3c6997;
-}
-
-#phone__app__3 {
-  background-color: #822e81;
-}
-
-#phone__app__4 {
-  background-color: #3c6997;
-}
-
-#phone__app__5 {
-  background-color: #822e81;
-}
-
-#phone__app__6 {
-  background-color: #3c6997;
-}
-
-#phone__app__7 {
-  background-color: #822e81;
-}
-
-#phone__app__8 {
-  background-color: #3c6997;
-}
-
-#phone__app__9 {
-  background-color: #3c6997;
-}
-
-#phone__app__10 {
-  background-color: #3c6997;
-}
-
-#phone__app__11 {
-  background-color: #3c6997;
-}
-
-#phone__app__12 {
-  background-color: #3c6997;
-}
-
-#phone__app__13 {
-  background-color: #3c6997;
-}
-
-#phone__app__14 {
-  background-color: #3c6997;
-}
-
-#phone__app__15 {
-  background-color: #3c6997;
-}
-
-.projects {
-  height: 2000px;
+.text--regular {
+  max-width: 800px;
+  line-height: 45px;
+  font-size: 29px;
+  font-weight: lighter;
+  margin-left: 55px;
 }
