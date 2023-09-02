@@ -17,20 +17,23 @@ body {
   background-color: #0f0f0f;
 }
 
-nav {
+.nav {
   width: 220px;
   height: 290px;
   padding-top: 70px;
   margin-left: 20px;
 }
-
-.sticky {
+.nav__sticky {
   position: sticky;
   top: 0;
   margin-bottom: auto;
 }
-
-nav > ul {
+.nav__name {
+  color: white;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.nav > ul {
   padding: 20px;
   list-style-type: none;
   height: 80px;
@@ -42,24 +45,15 @@ nav > ul {
   margin-right: 10px;
   font-size: 20px;
 }
-
-.nav__name {
-  color: white;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-nav > ul > li > a {
+.nav > ul > li > a {
   text-decoration: none;
   color: white;
   font-weight: lighter;
 }
-
-nav > ul > li > a:hover {
+.nav > ul > li > a:hover {
   color: white;
   text-decoration: underline;
 }
-
 .nav__images {
   display: flex;
   margin-right: 44px;
@@ -68,10 +62,21 @@ nav > ul > li > a:hover {
   height: 30px;
   gap: 10px;
 }
-
 .nav__images > img {
   width: 100%;
   height: 100%;
+}
+
+.text--regular {
+  max-width: 800px;
+  line-height: 45px;
+  font-size: 29px;
+  font-weight: lighter;
+  margin-left: 55px;
+  color: white;
+}
+.text--bold {
+  font-weight: bold;
 }
 
 .content__wrapper {
@@ -92,7 +97,39 @@ nav > ul > li > a:hover {
   align-items: center;
 }
 
-header {
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: left;
+  height: 250px;
+  width: 100%;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+.header__text__wrapper {
+  width: 100%;
+}
+.header__title {
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 50px;
+  color: white;
+}
+.header__subtitle {
+  font-size: 29px;
+  font-weight: 199;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: lighter;
+  color: white;
+}
+.header__subtitle--bold {
+  font-weight: bold;
+}
+
+.skills {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -104,30 +141,9 @@ header {
   margin-left: 50px;
   margin-bottom: 50px;
 }
-
-.header__text__wrapper {
-  width: 100%;
-}
-
-.header__title {
-  font-size: 40px;
-  font-weight: 400;
-  margin-top: 50px;
-  color: white;
-}
-
-.header__subtitle {
-  font-size: 29px;
-  font-weight: 199;
+.skills__phone {
+  width: 312.313px;
+  height: 149.707px;
+  margin-left: 60px;
   margin-top: 40px;
-  margin-bottom: 30px;
-  font-weight: lighter;
-}
-
-.text--regular {
-  max-width: 800px;
-  line-height: 45px;
-  font-size: 29px;
-  font-weight: lighter;
-  margin-left: 55px;
 }
