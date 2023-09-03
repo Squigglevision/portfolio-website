@@ -6,7 +6,6 @@
 		sans-serif;
 }
 
-// object-fit: fill; -- I think you use this to make images fill the width and height you set
 html {
 	width: 100%;
 }
@@ -78,9 +77,6 @@ body {
 			flex-wrap: wrap;
 			background-color: white;
 		}
-		// @media only screen and (max-width: 768px) {
-		// 	flex-direction: column;
-		// }
 	}
 
 	& > ul > li {
@@ -145,10 +141,9 @@ body {
 	align-items: flex-start;
 	width: 100%;
 	gap: 80px;
-	margin-left: 20px;
+	margin-left: 50px;
 	@media only screen and (max-width: 1060px) {
 		margin: 0;
-		// max-width: 768px;
 	}
 }
 
@@ -164,18 +159,14 @@ body {
 .header {
 	text-align: left;
 	width: 100%;
-	margin-left: 50px;
-
-	@media only screen and (max-width: 1060px) {
-		margin-left: 0px;
-	}
 
 	&__text__wrapper {
 		max-width: 670px;
+		margin-left: 20px;
 		@media only screen and (max-width: 1060px) {
 			margin-left: 20px;
 		}
-		@media only screen and (max-width: 768px) {
+		@media only screen and (max-width: 767px) {
 			padding-top: 50px;
 		}
 	}
@@ -209,7 +200,7 @@ body {
 	&__content__wrapper {
 		max-width: 670px;
 		margin-left: 20px;
-		@media only screen and (max-width: 768px) {
+		@media only screen and (max-width: 767px) {
 			margin-top: 70px;
 		}
 	}
@@ -219,7 +210,7 @@ body {
 		height: 149.707px;
 		margin-left: 60px;
 		margin-top: 40px;
-		@media only screen and (max-width: 768px) {
+		@media only screen and (max-width: 767px) {
 			margin-left: 0;
 		}
 	}
@@ -236,7 +227,7 @@ body {
 		flex-direction: column;
 		flex-wrap: wrap;
 		gap: 50px;
-		@media only screen and (max-width: 768px) {
+		@media only screen and (max-width: 767px) {
 			margin-top: 70px;
 		}
 	}
@@ -257,13 +248,13 @@ body {
 			@media only screen and (max-width: 1060px) {
 				display: block;
 			}
-			@media only screen and (max-width: 768px) {
+			@media only screen and (max-width: 767px) {
 				text-align: left;
 				margin-left: 0;
 			}
 
 			& > img {
-				@media only screen and (max-width: 768px) {
+				@media only screen and (max-width: 767px) {
 					max-width: 200px;
 					max-height: 200px;
 				}
@@ -276,7 +267,7 @@ body {
 		&__title {
 			margin-left: 55px;
 			margin-bottom: 10px;
-			@media only screen and (max-width: 768px) {
+			@media only screen and (max-width: 767px) {
 				margin-left: 0;
 			}
 		}
@@ -290,7 +281,7 @@ body {
 				gap: 25px;
 				margin-left: 0;
 			}
-			@media only screen and (max-width: 768px) {
+			@media only screen and (max-width: 767px) {
 				margin-left: 0;
 			}
 		}
@@ -306,7 +297,7 @@ body {
 				margin-top: 0;
 				margin-left: 60px;
 			}
-			@media only screen and (max-width: 768px) {
+			@media only screen and (max-width: 767px) {
 				margin-left: 0px;
 			}
 			& > img {
@@ -362,7 +353,7 @@ body {
 		font-weight: lighter;
 		margin-left: 55px;
 		color: white;
-		@media only screen and (max-width: 768px) {
+		@media only screen and (max-width: 767px) {
 			margin-left: 0;
 			max-width: 350px;
 			font-size: 20px;

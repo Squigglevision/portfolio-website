@@ -142,7 +142,7 @@ body {
   align-items: flex-start;
   width: 100%;
   gap: 80px;
-  margin-left: 20px;
+  margin-left: 50px;
 }
 @media only screen and (max-width: 1060px) {
   .content__wrapper {
@@ -164,22 +164,17 @@ body {
 .header {
   text-align: left;
   width: 100%;
-  margin-left: 50px;
-}
-@media only screen and (max-width: 1060px) {
-  .header {
-    margin-left: 0px;
-  }
 }
 .header__text__wrapper {
   max-width: 670px;
+  margin-left: 20px;
 }
 @media only screen and (max-width: 1060px) {
   .header__text__wrapper {
     margin-left: 20px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .header__text__wrapper {
     padding-top: 50px;
   }
@@ -211,7 +206,7 @@ body {
   max-width: 670px;
   margin-left: 20px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .skills__content__wrapper {
     margin-top: 70px;
   }
@@ -222,7 +217,7 @@ body {
   margin-left: 60px;
   margin-top: 40px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .skills__phone {
     margin-left: 0;
   }
@@ -240,7 +235,7 @@ body {
   flex-wrap: wrap;
   gap: 50px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .projects__content__wrapper {
     margin-top: 70px;
   }
@@ -266,13 +261,13 @@ body {
     display: block;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .projects__card__images {
     text-align: left;
     margin-left: 0;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .projects__card__images > img {
     max-width: 200px;
     max-height: 200px;
@@ -285,7 +280,7 @@ body {
   margin-left: 55px;
   margin-bottom: 10px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .projects__card__title {
     margin-left: 0;
   }
@@ -303,7 +298,7 @@ body {
     margin-left: 0;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .projects__card__description {
     margin-left: 0;
   }
@@ -323,7 +318,7 @@ body {
     margin-left: 60px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .projects__card__icons {
     margin-left: 0px;
   }
@@ -375,7 +370,7 @@ body {
   margin-left: 55px;
   color: white;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .text--regular {
     margin-left: 0;
     max-width: 350px;
