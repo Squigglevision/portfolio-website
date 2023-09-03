@@ -1,172 +1,335 @@
-// Added to apps: React, javascript, java, html5, css3, SCSS/Sass
-// Want to add: git,
 * {
 	padding: 0;
 	margin: 0;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+}
+
+// object-fit: fill; -- I think you use this to make images fill the width and height you set
+html {
+	width: 100%;
 }
 
 body {
-	font-family: sans-serif;
+	height: 3000px;
+	width: 100%;
+	display: flex;
+	background-image: url(../images/gradient-background.png);
+	background-repeat: repeat-y;
+	background-color: #0f0f0f;
+	background-size: 1920px;
+
+	@media only screen and (max-width: 1060px) {
+		flex-direction: column;
+	}
+}
+
+.nav {
+	width: 220px;
+	height: 290px;
+	padding-top: 70px;
+	margin-left: 20px;
+	@media only screen and (max-width: 1060px) {
+		width: 100%;
+		height: 60px;
+		background-color: white;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	&__sticky {
+		position: sticky;
+		top: 0;
+		margin-bottom: auto;
+	}
+
+	&__name {
+		color: white;
+		margin-bottom: 10px;
+		font-weight: bold;
+		@media only screen and (max-width: 1060px) {
+			color: black;
+			margin: 0;
+		}
+	}
+
+	& > ul {
+		padding: 20px;
+		list-style-type: none;
+		height: 80px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-end;
+		gap: 15px;
+		margin-right: 10px;
+		font-size: 20px;
+		@media only screen and (max-width: 1060px) {
+			width: 100%;
+			margin-right: 0;
+			flex-direction: row;
+			justify-content: flex-start;
+			height: auto;
+			align-items: center;
+			flex-wrap: wrap;
+			background-color: white;
+		}
+		// @media only screen and (max-width: 768px) {
+		// 	flex-direction: column;
+		// }
+	}
+
+	& > ul > li {
+		min-width: 110px;
+		text-align: right;
+	}
+
+	& > ul > li > a {
+		text-decoration: none;
+		color: white;
+		font-weight: lighter;
+		@media only screen and (max-width: 1060px) {
+			color: black;
+		}
+	}
+
+	> ul > li > a:hover {
+		color: white;
+		text-decoration: underline;
+		@media only screen and (max-width: 1060px) {
+			color: black;
+		}
+	}
+
+	&__images {
+		display: flex;
+		margin-right: 44px;
+		margin-top: 20px;
+		width: 30px;
+		height: 30px;
+		gap: 10px;
+
+		@media only screen and (max-width: 1060px) {
+			align-items: center;
+			justify-content: center;
+			margin-top: 0;
+			margin-right: 0;
+		}
+
+		&__wrapper {
+			@media only screen and (max-width: 1060px) {
+				background-color: black;
+				border-radius: 10px;
+				width: 100px;
+				height: 50px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+
+		& > img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.content__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	gap: 80px;
+	margin-left: 20px;
+	@media only screen and (max-width: 1060px) {
+		margin: 0;
+		// max-width: 768px;
+	}
+}
+
+.about {
+	height: auto;
+	width: 100%;
+	color: white;
+	@media only screen and (max-width: 1060px) {
+		margin-top: 70px;
+	}
+}
+
+.header {
+	text-align: left;
+	width: 100%;
+	margin-left: 50px;
+
+	@media only screen and (max-width: 1060px) {
+		margin-left: 0px;
+	}
+
+	&__text__wrapper {
+		max-width: 670px;
+		@media only screen and (max-width: 1060px) {
+			margin-left: 20px;
+		}
+	}
+
+	&__title {
+		font-size: 40px;
+		font-weight: 400;
+		margin-top: 70px;
+		color: white;
+	}
+
+	&__subtitle {
+		font-size: 22px;
+		font-weight: 199;
+		margin-top: 40px;
+		margin-bottom: 30px;
+		font-weight: lighter;
+		color: white;
+
+		&--bold {
+			font-weight: bold;
+		}
+	}
 }
 
 .skills {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 500px;
-	gap: 5px;
-	background: #233e58;
+	text-align: left;
 	color: white;
-	gap: 30px;
-	@media only screen and (max-width: 768px) {
-		flex-direction: column-reverse;
-		align-items: center;
-		gap: 0px;
+	width: 100%;
+
+	&__content__wrapper {
+		max-width: 670px;
+		margin-left: 20px;
+	}
+
+	&__phone {
+		width: 312.313px;
+		height: 149.707px;
+		margin-left: 60px;
+		margin-top: 40px;
+		@media only screen and (max-width: 768px) {
+			margin-left: 0;
+		}
 	}
 }
 
-h2 {
+.projects {
+	text-align: left;
 	color: white;
-}
+	width: 100%;
 
-.text--bold {
-	font-weight: 600;
-}
-
-.skills__content__wrapper {
-	height: 150px;
-	max-width: 300px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	border-top: 1px solid white;
-	border-bottom: 1px solid white;
-	@media only screen and (max-width: 768px) {
-		border-top: none;
-		padding: 20px;
+	&__content__wrapper {
+		margin-left: 20px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		gap: 50px;
 	}
-	// @media only screen and (max-width: 768px) {
-	// 	border-top: none;
-	// 	border-bottom: none;
-	// }
-}
 
-.skills__content__wrapper > p,
-.skills__content__wrapper > h2 {
-	padding: 5px;
-	@media only screen and (max-width: 768px) {
-		text-align: center;
+	&__card {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		gap: 50px;
+		@media only screen and (max-width: 1060px) {
+			flex-direction: column-reverse;
+		}
+
+		&__images {
+			display: flex;
+			gap: 50px;
+			margin-left: 70px;
+			@media only screen and (max-width: 1060px) {
+				display: block;
+			}
+			@media only screen and (max-width: 768px) {
+				text-align: left;
+				margin-left: 0;
+			}
+
+			& > img {
+				@media only screen and (max-width: 768px) {
+					max-width: 200px;
+					max-height: 200px;
+				}
+			}
+		}
+		&__text__wrapper {
+			max-width: 670px;
+		}
+
+		&__title {
+			margin-left: 55px;
+			margin-bottom: 10px;
+			@media only screen and (max-width: 768px) {
+				margin-left: 0;
+			}
+		}
+		&__description {
+			display: flex;
+			margin-left: 45px;
+			gap: 50px;
+			@media only screen and (max-width: 1060px) {
+				flex-direction: column;
+				flex-wrap: wrap;
+				gap: 25px;
+				margin-left: 0;
+			}
+			@media only screen and (max-width: 768px) {
+				margin-left: 0;
+			}
+		}
+		&__icons {
+			width: 30px;
+			height: 30px;
+			margin-top: 50px;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			@media only screen and (max-width: 1060px) {
+				flex-direction: row;
+				margin-top: 0;
+				margin-left: 60px;
+			}
+			@media only screen and (max-width: 768px) {
+				margin-left: 0px;
+			}
+			& > img {
+				width: 100%;
+				height: 100%;
+			}
+		}
 	}
-	// @media only screen and (max-width: 576px) {
-	// 	margin-right: 5px;
-	// }
 }
 
-.skills__content__wrapper > h1 {
-	margin-left: 10px;
-	// @media only screen and (max-width: 576px) {
-	// 	font-size: medium;
-	// 	margin-left: 10px;
-	// 	padding: 0;
-	// }
-}
-
-.skills__content__wrapper > p {
-	margin-left: 13px;
-	// @media only screen and (max-width: 576px) {
-	// 	font-size: small;
-	// 	margin-left: 10px;
-	// 	padding: 0;
-	// }
-}
-
-.phone__app__wrapper {
-	min-width: 200px;
-	max-width: 250px;
-	height: 400px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
-	gap: 10px;
-
-	@media only screen and (max-width: 768px) {
-		max-height: 200px;
+.image {
+	&--rotated {
+		transform: rotate(60deg);
 	}
 }
 
-.phone__app {
-	height: 50px;
-	width: 50px;
-	border-radius: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 1px solid white;
-}
+.text {
+	&--regular {
+		max-width: 670px;
+		line-height: 45px;
+		font-size: 25px;
+		font-weight: lighter;
+		margin-left: 55px;
+		color: white;
+		@media only screen and (max-width: 768px) {
+			margin-left: 0;
+			max-width: 350px;
+			font-size: 20px;
+		}
+	}
 
-.phone__app > img {
-	height: 40px;
-	width: 40px;
+	&--bold {
+		font-weight: bold;
+	}
 }
-
-#phone__app__1 {
-	background-color: #822e81;
-}
-
-#phone__app__2 {
-	background-color: #3c6997;
-}
-
-#phone__app__3 {
-	background-color: #822e81;
-}
-
-#phone__app__4 {
-	background-color: #3c6997;
-}
-#phone__app__5 {
-	background-color: #822e81;
-}
-
-#phone__app__6 {
-	background-color: #3c6997;
-}
-
-#phone__app__7 {
-	background-color: #822e81;
-}
-
-#phone__app__8 {
-	background-color: #3c6997;
-}
-
-#phone__app__9 {
-	background-color: #3c6997;
-}
-
-#phone__app__10 {
-	background-color: #3c6997;
-}
-
-#phone__app__11 {
-	background-color: #3c6997;
-}
-#phone__app__12 {
-	background-color: #3c6997;
-}
-#phone__app__13 {
-	background-color: #3c6997;
-}
-
-#phone__app__14 {
-	background-color: #3c6997;
-}
-
-#phone__app__15 {
-	background-color: #3c6997;
-}
-
-// #3C6997 (Lapis Lazuli - slighty dark blue/grey)
-//      #233e58 (A few shades darker than Lapis Lazuli)
-// #822E81 (Mardi Gras - eggplant colour but brighter, more pigmented)
