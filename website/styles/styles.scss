@@ -7,14 +7,22 @@
 }
 
 // object-fit: fill; -- I think you use this to make images fill the width and height you set
+html {
+	width: 100%;
+}
 
 body {
 	height: 3000px;
+	width: 100%;
 	display: flex;
 	background-image: url(../images/gradient-background.png);
 	background-repeat: repeat-y;
 	background-color: #0f0f0f;
 	background-size: 1920px;
+
+	@media only screen and (max-width: 1060px) {
+		flex-direction: column;
+	}
 }
 
 .nav {
@@ -22,6 +30,16 @@ body {
 	height: 290px;
 	padding-top: 70px;
 	margin-left: 20px;
+	@media only screen and (max-width: 1060px) {
+		width: 100%;
+		height: 60px;
+		background-color: white;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
 
 	&__sticky {
 		position: sticky;
@@ -33,6 +51,10 @@ body {
 		color: white;
 		margin-bottom: 10px;
 		font-weight: bold;
+		@media only screen and (max-width: 1060px) {
+			color: black;
+			margin: 0;
+		}
 	}
 
 	& > ul {
@@ -46,17 +68,41 @@ body {
 		gap: 15px;
 		margin-right: 10px;
 		font-size: 20px;
+		@media only screen and (max-width: 1060px) {
+			width: 100%;
+			margin-right: 0;
+			flex-direction: row;
+			justify-content: flex-start;
+			height: auto;
+			align-items: center;
+			flex-wrap: wrap;
+			background-color: white;
+		}
+		// @media only screen and (max-width: 768px) {
+		// 	flex-direction: column;
+		// }
+	}
+
+	& > ul > li {
+		min-width: 110px;
+		text-align: right;
 	}
 
 	& > ul > li > a {
 		text-decoration: none;
 		color: white;
 		font-weight: lighter;
+		@media only screen and (max-width: 1060px) {
+			color: black;
+		}
 	}
 
 	> ul > li > a:hover {
 		color: white;
 		text-decoration: underline;
+		@media only screen and (max-width: 1060px) {
+			color: black;
+		}
 	}
 
 	&__images {
@@ -66,6 +112,25 @@ body {
 		width: 30px;
 		height: 30px;
 		gap: 10px;
+
+		@media only screen and (max-width: 1060px) {
+			align-items: center;
+			justify-content: center;
+			margin-top: 0;
+			margin-right: 0;
+		}
+
+		&__wrapper {
+			@media only screen and (max-width: 1060px) {
+				background-color: black;
+				border-radius: 10px;
+				width: 100px;
+				height: 50px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
 
 		& > img {
 			width: 100%;
@@ -81,12 +146,19 @@ body {
 	width: 100%;
 	gap: 80px;
 	margin-left: 20px;
+	@media only screen and (max-width: 1060px) {
+		margin: 0;
+		// max-width: 768px;
+	}
 }
 
 .about {
 	height: auto;
 	width: 100%;
 	color: white;
+	@media only screen and (max-width: 1060px) {
+		margin-top: 70px;
+	}
 }
 
 .header {
@@ -94,8 +166,15 @@ body {
 	width: 100%;
 	margin-left: 50px;
 
+	@media only screen and (max-width: 1060px) {
+		margin-left: 0px;
+	}
+
 	&__text__wrapper {
-		width: 670px;
+		max-width: 670px;
+		@media only screen and (max-width: 1060px) {
+			margin-left: 20px;
+		}
 	}
 
 	&__title {
@@ -106,7 +185,7 @@ body {
 	}
 
 	&__subtitle {
-		font-size: 24px;
+		font-size: 22px;
 		font-weight: 199;
 		margin-top: 40px;
 		margin-bottom: 30px;
@@ -125,8 +204,8 @@ body {
 	width: 100%;
 
 	&__content__wrapper {
-		width: 670px;
-		margin-left: 50px;
+		max-width: 670px;
+		margin-left: 20px;
 	}
 
 	&__phone {
@@ -134,48 +213,77 @@ body {
 		height: 149.707px;
 		margin-left: 60px;
 		margin-top: 40px;
+		@media only screen and (max-width: 768px) {
+			margin-left: 0;
+		}
 	}
 }
 
 .projects {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	flex-wrap: wrap;
 	text-align: left;
 	color: white;
 	width: 100%;
 
 	&__content__wrapper {
-		margin-left: 50px;
+		margin-left: 20px;
 		display: flex;
 		flex-direction: column;
+		flex-wrap: wrap;
 		gap: 50px;
 	}
 
 	&__card {
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: column;
 		gap: 50px;
+		@media only screen and (max-width: 1060px) {
+			flex-direction: column-reverse;
+		}
 
 		&__images {
 			display: flex;
-			flex-wrap: wrap;
 			gap: 50px;
 			margin-left: 70px;
+			@media only screen and (max-width: 1060px) {
+				display: block;
+			}
+			@media only screen and (max-width: 768px) {
+				text-align: left;
+				margin-left: 0;
+			}
+
+			& > img {
+				@media only screen and (max-width: 768px) {
+					max-width: 200px;
+					max-height: 200px;
+				}
+			}
 		}
 		&__text__wrapper {
-			width: 670px;
+			max-width: 670px;
 		}
 
 		&__title {
 			margin-left: 55px;
 			margin-bottom: 10px;
+			@media only screen and (max-width: 768px) {
+				margin-left: 0;
+			}
 		}
 		&__description {
 			display: flex;
 			margin-left: 45px;
 			gap: 50px;
+			@media only screen and (max-width: 1060px) {
+				flex-direction: column;
+				flex-wrap: wrap;
+				gap: 25px;
+				margin-left: 0;
+			}
+			@media only screen and (max-width: 768px) {
+				margin-left: 0;
+			}
 		}
 		&__icons {
 			width: 30px;
@@ -184,6 +292,14 @@ body {
 			display: flex;
 			flex-direction: column;
 			gap: 10px;
+			@media only screen and (max-width: 1060px) {
+				flex-direction: row;
+				margin-top: 0;
+				margin-left: 60px;
+			}
+			@media only screen and (max-width: 768px) {
+				margin-left: 0px;
+			}
 			& > img {
 				width: 100%;
 				height: 100%;
@@ -206,6 +322,11 @@ body {
 		font-weight: lighter;
 		margin-left: 55px;
 		color: white;
+		@media only screen and (max-width: 768px) {
+			margin-left: 0;
+			max-width: 350px;
+			font-size: 20px;
+		}
 	}
 
 	&--bold {
