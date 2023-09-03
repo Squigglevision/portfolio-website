@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  height: 3000px;
+  height: 3600px;
   width: 100%;
   display: flex;
   background-image: url(../images/gradient-background.png);
@@ -37,7 +37,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     flex-wrap: wrap;
   }
 }
@@ -53,7 +53,7 @@ body {
 }
 @media only screen and (max-width: 1060px) {
   .nav__name {
-    color: black;
+    color: #ed7453;
     margin: 0;
   }
 }
@@ -74,7 +74,7 @@ body {
     width: 100%;
     margin-right: 0;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: flex-end;
     height: auto;
     align-items: center;
     flex-wrap: wrap;
@@ -122,7 +122,7 @@ body {
 }
 @media only screen and (max-width: 1060px) {
   .nav__images__wrapper {
-    background-color: black;
+    background-color: #ed7453;
     border-radius: 10px;
     width: 100px;
     height: 50px;
@@ -179,6 +179,11 @@ body {
     margin-left: 20px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .header__text__wrapper {
+    padding-top: 50px;
+  }
+}
 .header__title {
   font-size: 40px;
   font-weight: 400;
@@ -206,6 +211,11 @@ body {
   max-width: 670px;
   margin-left: 20px;
 }
+@media only screen and (max-width: 768px) {
+  .skills__content__wrapper {
+    margin-top: 70px;
+  }
+}
 .skills__phone {
   width: 312.313px;
   height: 149.707px;
@@ -229,6 +239,11 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .projects__content__wrapper {
+    margin-top: 70px;
+  }
 }
 .projects__card {
   display: flex;
@@ -314,6 +329,36 @@ body {
   }
 }
 .projects__card__icons > img {
+  width: 100%;
+  height: 100%;
+}
+
+.contact {
+  margin-left: 20px;
+  margin-bottom: 180px;
+}
+.contact__wrapper {
+  margin-left: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact__info {
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 10px;
+}
+.contact__info > p {
+  line-height: 45px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+.contact__images {
+  width: 30px;
+  height: 30px;
+}
+.contact__images > img {
   width: 100%;
   height: 100%;
 }
